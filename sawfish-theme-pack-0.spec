@@ -11,7 +11,6 @@ Source1:	http://debian.attica.net.nz/themes.org/sawmill/7of9-0.28.tar.gz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 A pack of themes for Sawfish: 1_0-0.30 7of9-0.28
