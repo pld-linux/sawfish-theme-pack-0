@@ -1,6 +1,6 @@
 %define		_nm	sawfish-theme
 Summary:	A "pack" of themes for Sawfish - starting with char [0-9]
-Summary(pl):	Zestaw tematów dla Sawfish'a - zaczynaj±cych siê od [0-9]
+Summary(pl):	Zestaw motywów dla Sawfish'a - zaczynaj±cych siê od [0-9]
 Name:		sawfish-theme-pack-0
 Version:	1
 Release:	1
@@ -16,13 +16,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A pack of themes for Sawfish: 1_0-0.30 7of9-0.28
 
 %description -l pl
-Paczka z nastêpuj±cymi tematami dla Sawfisha:
+Paczka z nastêpuj±cymi motywami dla Sawfisha:
 - 1_0-0.30,
 - 7of9-0.28.
 
 %package -n %{_nm}-1_0
 Summary:	Sawfish's theme "One Oh"
-Summary(pl):	Temat do sawfisha "One Oh"
+Summary(pl):	Motyw do sawfisha "One Oh"
 Group:		Themes
 Requires:	sawfish
 
@@ -31,7 +31,7 @@ Pronounced "One Oh", this is a theme I made to go with a background I
 made.. Zinx Verituse <zinx@microsoftisevil.com>
 
 %description -n %{_nm}-1_0 -l pl
-Temat "One Oh" autorstwa Zinx Verituse <zinx@microsoftisevil.com>
+Motyw "One Oh" autorstwa Zinx Verituse <zinx@microsoftisevil.com>
 
 %package -n %{_nm}-7of9
 Summary:	based on the 7of9 WindowMaker theme
@@ -44,12 +44,12 @@ This is based on the 7of9 WindowMaker theme, it was ported at a
 friend's request. The lisp is based on the blue-heart theme by John
 Harper. The theme resembles WindowMaker rather nicely, and goes best
 with the included background. Ported by Dean <dean@thestuff.net>
-Original WM theme by Ken (kingofstring@comports.com)
+Original WM theme by Ken <kingofstring@comports.com>.
 
 %description -n %{_nm}-7of9
-Temat bazowany na temacie 7og9 z WindowMakera. Przeportowany przez
-Dean <dean@thestuff.net>. Autorem tematu do WindowMakera jest Ken 
-(kingofstring@comports.com).
+Motyw bazowany na temacie 7og9 z WindowMakera. Przeportowany przez
+Dean <dean@thestuff.net>. Autorem motywu do WindowMakera jest Ken 
+<kingofstring@comports.com>.
 
 %prep
 %setup -q -c -b 0 -b 1
