@@ -5,8 +5,8 @@ Version:	1
 Release:	1
 License:	GPL
 Group:		Themes
-Source0:	%{name}.tar.bz2
-URL:		http://debian.attica.net.nz/themes.org/sawmill/
+Source0:	http://debian.attica.net.nz/themes.org/sawmill/1_0-0.30.tar.gz
+Source2:	http://debian.attica.net.nz/themes.org/sawmill/7of9-0.28.tar.gz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,26 +31,13 @@ Requires:	sawfish
 Pronounced "One Oh", this is a theme I made to go with a background I
 made.. Zinx Verituse <zinx@microsoftisevil.com>
 
-%package 7of9-0.19
+%package 7of9
 Summary:	based on the 7of9 WindowMaker theme
 Summary(pl):	Bazowany na temacie 7of9 z WindowMakera
 Group:		Themes
 Requires:	sawfish
 
-%description 7of9-0.19
-This is based on the 7of9 WindowMaker theme, it was ported at a
-friend's request. The lisp is based on the blue-heart theme by John
-Harper. The theme resembles WindowMaker rather nicely, and goes best
-with the included background. Ported by Dean <dean@thestuff.net>
-Original WM theme by Ken (kingofstring@comports.com)
-
-%package 7of9-0.28
-Summary:	based on the 7of9 WindowMaker theme
-Summary(pl):	Bazowany na temacie 7of9 z WindowMakera
-Group:		Themes
-Requires:	sawfish
-
-%description 7of9-0.28
+%description 7of9
 This is based on the 7of9 WindowMaker theme, it was ported at a
 friend's request. The lisp is based on the blue-heart theme by John
 Harper. The theme resembles WindowMaker rather nicely, and goes best
@@ -58,22 +45,13 @@ with the included background. Ported by Dean <dean@thestuff.net>
 Original WM theme by Ken (kingofstring@comports.com)
 
 %prep
-%setup -q -n 0
-tar xzf 1_0-0.30.tar.gz
-mkdir 0.19
-tar xzf 7of9-0.19.tar.gz -C 0.19
-mkdir 0.28
-tar xzf 7of9-0.28.tar.gz -C 0.28
-
-%build
+%setup -c -b 0 -b 1 -b 2
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/{1_0,7of9-0.19,7of9-0.28}
+install -d $RPM_BUILD_ROOT%{_datadir}/sawfish/themes
 
-install 1_0/* $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/1_0/
-install 0.19/7of9/* $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/7of9-0.19/
-install 0.28/7of9/* $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/7of9-0.28/
+install 1_0 0.19 $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -85,10 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/sawfish/themes/1_0/
 
-%files 7of9-0.19
+%files 7of9
 %defattr(644,root,root,755)
-%{_datadir}/sawfish/themes/7of9-0.19
-
-%files 7of9-0.28
-%defattr(644,root,root,755)
-%{_datadir}/sawfish/themes/7of9-0.28
+%{_datadir}/sawfish/themes/7of9
