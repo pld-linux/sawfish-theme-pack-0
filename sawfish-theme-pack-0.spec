@@ -31,6 +31,9 @@ Requires:	sawfish
 Pronounced "One Oh", this is a theme I made to go with a background I
 made.. Zinx Verituse <zinx@microsoftisevil.com>
 
+%description -n %{_nm}-1_0 -l pl
+Temat "One Oh" autorstwa Zinx Verituse <zinx@microsoftisevil.com>
+
 %package -n %{_nm}-7of9
 Summary:	based on the 7of9 WindowMaker theme
 Summary(pl):	Bazowany na temacie 7of9 z WindowMakera
@@ -43,6 +46,11 @@ friend's request. The lisp is based on the blue-heart theme by John
 Harper. The theme resembles WindowMaker rather nicely, and goes best
 with the included background. Ported by Dean <dean@thestuff.net>
 Original WM theme by Ken (kingofstring@comports.com)
+
+%description -n %{_nm}-7of9
+Temat bazowany na temacie 7og9 z WindowMakera. Przeportowany przez
+Dean <dean@thestuff.net>. Autorem tematu do WindowMakera jest Ken 
+(kingofstring@comports.com).
 
 %prep
 %setup -q -c -b 0 -b 1
