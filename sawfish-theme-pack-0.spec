@@ -6,19 +6,18 @@ Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://debian.attica.net.nz/themes.org/sawmill/1_0-0.30.tar.gz
-Source2:	http://debian.attica.net.nz/themes.org/sawmill/7of9-0.28.tar.gz
+Source1:	http://debian.attica.net.nz/themes.org/sawmill/7of9-0.28.tar.gz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6/share
+%define		_prefix		/usr/X11R6
 
 %description
-A pack of themes for Sawfish: 1_0-0.30 7of9-0.19 7of9-0.28
+A pack of themes for Sawfish: 1_0-0.30 7of9-0.28
 
 %description -l pl
 Paczka z nastêpuj±cymi tematami dla Sawfisha:
 - 1_0-0.30,
-- 7of9-0.19
 - 7of9-0.28.
 
 %package 1_0
@@ -45,16 +44,16 @@ with the included background. Ported by Dean <dean@thestuff.net>
 Original WM theme by Ken (kingofstring@comports.com)
 
 %prep
-%setup -c -b 0 -b 1 -b 2
+%setup -c -b 0 -b 1
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/sawfish/themes
+#rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/
 
-install 1_0 0.19 $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/
+mv -f {1_0,7of9} $RPM_BUILD_ROOT%{_datadir}/sawfish/themes/
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+#rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
