@@ -3,14 +3,13 @@ Summary:	A "pack" of themes for Sawfish - starting with char [0-9]
 Summary(pl):	Zestaw motywów dla Sawfish'a - zaczynaj±cych siê od [0-9]
 Name:		sawfish-theme-pack-0
 Version:	1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
-# http://debian.attica.net.nz/themes.org/sawmill/1_0-0.30.tar.gz
-Source0:	1_0-0.30.tar.gz
+Source0:	http://download.freshmeat.net/themes/1_0/1_0-0.30.tar.gz
 # Source0-md5:	b94f237810c1415691265bfea229c81f
-Source1:	7of9-0.28.tar.gz
-# Source1-md5:	5ed403daee33cd531b6997adf180c2d0
+Source1:	http://download.freshmeat.net/themes/7of9/7of9-0.52.0.tar.gz
+# Source1-md5:	54a4984869c09acc3828db479a0eb6bb
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
