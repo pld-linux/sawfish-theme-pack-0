@@ -35,7 +35,7 @@ Motyw "One Oh" autorstwa Zinx Verituse <zinx@microsoftisevil.com>
 
 %package -n %{_nm}-7of9
 Summary:	based on the 7of9 WindowMaker theme
-Summary(pl):	Bazowany na temacie 7of9 z WindowMakera
+Summary(pl):	Bazowany na motywie 7of9 z WindowMakera
 Group:		Themes
 Requires:	sawfish
 
@@ -47,7 +47,7 @@ with the included background. Ported by Dean <dean@thestuff.net>
 Original WM theme by Ken <kingofstring@comports.com>.
 
 %description -n %{_nm}-7of9
-Motyw bazowany na temacie 7og9 z WindowMakera. Przeportowany przez
+Motyw bazowany na motywie 7og9 z WindowMakera. Przeportowany przez
 Dean <dean@thestuff.net>. Autorem motywu do WindowMakera jest Ken 
 <kingofstring@comports.com>.
 
