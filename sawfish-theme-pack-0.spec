@@ -49,7 +49,7 @@ Original WM theme by Ken <kingofstring@comports.com>.
 
 %description -n %{_nm}-7of9 -l pl
 Motyw bazowany na motywie 7og9 z WindowMakera. Przeportowany przez
-Dean <dean@thestuff.net>. Autorem motywu do WindowMakera jest Ken 
+Dean <dean@thestuff.net>. Autorem motywu do WindowMakera jest Ken
 <kingofstring@comports.com>.
 
 %prep
