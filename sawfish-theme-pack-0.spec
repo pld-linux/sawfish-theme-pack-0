@@ -6,12 +6,13 @@ Version:	1
 Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://debian.attica.net.nz/themes.org/sawmill/1_0-0.30.tar.gz
-Source1:	http://debian.attica.net.nz/themes.org/sawmill/7of9-0.28.tar.gz
+# http://debian.attica.net.nz/themes.org/sawmill/1_0-0.30.tar.gz
+Source0:	1_0-0.30.tar.gz
+# Source0-md5:	b94f237810c1415691265bfea229c81f
+Source1:	7of9-0.28.tar.gz
 # Source1-md5:	5ed403daee33cd531b6997adf180c2d0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 A pack of themes for Sawfish: 1_0-0.30 7of9-0.28
