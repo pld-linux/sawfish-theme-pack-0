@@ -8,6 +8,7 @@ License:	GPL
 Group:		Themes
 Source0:	http://debian.attica.net.nz/themes.org/sawmill/1_0-0.30.tar.gz
 Source1:	http://debian.attica.net.nz/themes.org/sawmill/7of9-0.28.tar.gz
+# Source1-md5:	5ed403daee33cd531b6997adf180c2d0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
