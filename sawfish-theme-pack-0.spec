@@ -47,7 +47,7 @@ Harper. The theme resembles WindowMaker rather nicely, and goes best
 with the included background. Ported by Dean <dean@thestuff.net>
 Original WM theme by Ken <kingofstring@comports.com>.
 
-%description -n %{_nm}-7of9
+%description -n %{_nm}-7of9 -l pl
 Motyw bazowany na motywie 7og9 z WindowMakera. Przeportowany przez
 Dean <dean@thestuff.net>. Autorem motywu do WindowMakera jest Ken 
 <kingofstring@comports.com>.
