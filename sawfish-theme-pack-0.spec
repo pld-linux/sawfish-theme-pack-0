@@ -1,6 +1,6 @@
 %define		_nm	sawfish-theme
 Summary:	A "pack" of themes for Sawfish - starting with char [0-9]
-Summary(pl.UTF-8):   Zestaw motywów dla Sawfish'a - zaczynających się od [0-9]
+Summary(pl.UTF-8):	Zestaw motywów dla Sawfish'a - zaczynających się od [0-9]
 Name:		sawfish-theme-pack-0
 Version:	1
 Release:	2
@@ -23,7 +23,7 @@ Paczka z następującymi motywami dla Sawfisha:
 
 %package -n %{_nm}-1_0
 Summary:	Sawfish's theme "One Oh"
-Summary(pl.UTF-8):   Motyw do sawfisha "One Oh"
+Summary(pl.UTF-8):	Motyw do sawfisha "One Oh"
 Group:		Themes
 Requires:	sawfish
 
@@ -36,7 +36,7 @@ Motyw "One Oh" autorstwa Zinx Verituse <zinx@microsoftisevil.com>
 
 %package -n %{_nm}-7of9
 Summary:	based on the 7of9 WindowMaker theme
-Summary(pl.UTF-8):   Bazowany na motywie 7of9 z WindowMakera
+Summary(pl.UTF-8):	Bazowany na motywie 7of9 z WindowMakera
 Group:		Themes
 Requires:	sawfish
 
